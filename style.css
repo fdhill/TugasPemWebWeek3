@@ -1,0 +1,201 @@
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: system-ui, -apple-system, sans-serif;
+  line-height: 1.6;
+  font-size: 16px;
+}
+
+.about p {
+  font-size: 18px;
+  text-align: justify;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px;
+  background-color: #e5e7eb;
+}
+
+header > div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 12px;
+}
+
+header nav {
+  display: flex;
+  gap: 16px;
+}
+
+nav a {
+  color: #1f2937;
+  text-decoration: none;
+  padding: 8px 12px;
+  border-radius: 6px;
+  transition: background-color 0.2s;
+}
+
+nav a:hover {
+  background-color: #d1d5db;
+}
+
+nav a:focus-visible {
+  outline: 2px solid #3b82f6;
+  outline-offset: 2px;
+}
+
+.myphoto {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 15px;
+}
+
+main section {
+  margin-bottom: 40px;
+}
+
+#about,
+#schedule {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+th,
+td {
+  border: 1px solid #d4d4d8;
+  text-align: center;
+  vertical-align: middle;
+  padding: 12px 8px;
+}
+
+th {
+  background-color: #f3f4f6;
+  font-weight: 600;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+#schedule {
+  overflow-x: auto;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding: 24px 15px;
+  background-color: #1f2937;
+  color: #e5e7eb;
+}
+
+.footer-kontak {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.footer-kontak h3 {
+  margin: 0;
+}
+
+address {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-style: normal;
+}
+
+address p {
+  margin: 0;
+  font-size: 16px;
+}
+
+address a {
+  color: #10b981;
+  text-decoration: none;
+}
+
+address a:hover {
+  text-decoration: underline;
+}
+
+address a:focus-visible {
+  outline: 2px solid #3b82f6;
+  outline-offset: 2px;
+}
+
+.footer-copyright {
+  border-top: 1px solid #374151;
+  padding-top: 16px;
+  text-align: center;
+  font-size: 14px;
+  color: #9ca3af;
+}
+
+.footer-copyright p {
+  margin: 0;
+}
+
+@media (max-width: 600px) {
+  header {
+    flex-direction: column;
+    gap: 16px;
+    padding: 12px;
+  }
+
+  header > div {
+    width: 100%;
+    justify-content: center;
+  }
+
+  header nav {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  nav a {
+    font-size: 14px;
+    padding: 6px 10px;
+  }
+
+  .about p,
+  p {
+    font-size: 16px;
+  }
+
+  table {
+    font-size: 14px;
+  }
+
+  th,
+  td {
+    padding: 8px 4px;
+  }
+
+  footer {
+    padding: 16px 12px;
+    gap: 16px;
+  }
+}
